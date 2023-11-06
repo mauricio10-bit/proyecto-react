@@ -83,7 +83,7 @@ const Formulario = () => {
                     {
                         lista.map((item, index) => (<tbody>
                             <tr>
-                                <th scope='row' >{index + 1}</th>
+                                <th scope='row'>{index + 1}</th>
                                 <td>{item.nombre}</td>
                                 <td>{item.apellido}</td>
                                 <td><button className="btn btn-warning me-2" onClick={() => editarUsuario(index)}>Editar</button></td>

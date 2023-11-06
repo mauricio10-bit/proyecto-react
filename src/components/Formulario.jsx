@@ -78,9 +78,9 @@ const Formulario = () => {
         <ol className="list-group">
           {
               lista.map((item, index) => 
-                  (<li key={index} className="list-group-item list-group-item-warning">ID: {index+1} <br /> Nombre: {item.nombre} <br /> Apellido: {item.apellido}
+                  (<li key={index} className="list-group-item list-group-item-info">ID: {index+1} <br /> Nombre: {item.nombre} <br /> Apellido: {item.apellido}
                       <button className="btn btn-danger float-end" onClick={() => eliminarUsuario(index)}>Eliminar</button>
-                      <button className="btn btn-primary float-end me-2" onClick={() => editarUsuario(index)}>Editar</button>
+                      <button className="btn btn-warning float-end me-2" onClick={() => editarUsuario(index)}>Editar</button>
                   </li>))
           }
         </ol>
